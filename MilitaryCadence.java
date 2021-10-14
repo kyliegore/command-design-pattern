@@ -25,7 +25,7 @@ public class MilitaryCadence {
     }
     public void singEverywhereWeGo() {
         try {
-            File file = new File("command-design-pattern/everywhere.txt");
+            File file = new File("./everywhere.txt");
             Scanner scanner = new Scanner(file);
             while(scanner.hasNextLine()) {
                 System.out.println(scanner.nextLine());
@@ -42,7 +42,7 @@ public class MilitaryCadence {
     }
     public void singInArmy() {
         try {
-            File file = new File("command-design-pattern/inarmy.txt");
+            File file = new File("./inarmy.txt");
             Scanner scanner = new Scanner(file);
             while(scanner.hasNextLine()) {
                 System.out.println(scanner.nextLine());
