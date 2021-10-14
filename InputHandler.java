@@ -1,5 +1,8 @@
 import java.util.concurrent.TimeUnit;
 import java.util.ArrayList;
+/**
+ * @author Anton, Christian, Kylie, Jack
+ */
 
 public class InputHandler {
     private ArrayList<Command> commands;
@@ -26,6 +29,9 @@ public class InputHandler {
             return false;
         }
         commands.get(num).execute();
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
+       
         return true;
     }
 }

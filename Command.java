@@ -1,5 +1,5 @@
 /**
- * @author Christian Rios, Anton Aarnink, Jack Hempstead, Kylie Gore
+ * @author Anton, Christian, Kylie, Jack
  */
 public interface Command {
     /**
