@@ -1,3 +1,6 @@
+/**
+ * @author Anton, Christian, Kylie
+ */
 public class InArmyCommand implements Command {
     /**
      * The parameter cadence is the instance of Military Cadence which 
