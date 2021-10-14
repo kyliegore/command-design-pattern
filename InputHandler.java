@@ -20,6 +20,12 @@ public class InputHandler {
         if(num == 0) {
             commands.get(0).execute();
         }
+        if(num == 1) {
+            commands.get(1).execute();
+        }
+        if(num == 2) {
+            commands.get(2).execute();
+        }
         return true;
     }
 }
