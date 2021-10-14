@@ -1,6 +1,7 @@
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
 public class MilitaryCadence {
     
     public MilitaryCadence() {
@@ -11,9 +12,17 @@ public class MilitaryCadence {
             File file = new File("./idontknow.txt");
             Scanner scanner = new Scanner(file);
             while(scanner.hasNextLine()) {
-                System.out.println(scanner.nextLine());
+                try {
+                    System.out.println(scanner.nextLine());
+                    TimeUnit.MILLISECONDS.sleep(100);
+                    System.out.flush();
+                    
+                }
+                catch (InterruptedException e){}
+
             }
             scanner.close();
+        
         } 
         catch(FileNotFoundException e) {
             System.out.println("IDontKnow cadence file not found");
@@ -28,7 +37,12 @@ public class MilitaryCadence {
             File file = new File("./everywhere.txt");
             Scanner scanner = new Scanner(file);
             while(scanner.hasNextLine()) {
-                System.out.println(scanner.nextLine());
+                try {
+                    System.out.println(scanner.nextLine());
+                    TimeUnit.MILLISECONDS.sleep(200);
+                    
+                }
+                catch (InterruptedException e){}
             }
             scanner.close();
         } 
@@ -57,4 +71,5 @@ public class MilitaryCadence {
             e.printStackTrace();
         }
     }
+    
 }
