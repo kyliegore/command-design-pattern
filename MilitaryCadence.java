@@ -25,6 +25,8 @@ public class MilitaryCadence {
                 try {
                     System.out.println(scanner.nextLine());
                     TimeUnit.MILLISECONDS.sleep(200); 
+                    System.out.print("\033[H\033[2J");
+                    System.out.flush();
                 }
                 catch (InterruptedException e){}
             }
@@ -54,6 +56,8 @@ public class MilitaryCadence {
                 try {
                     System.out.println(scanner.nextLine());
                     TimeUnit.MILLISECONDS.sleep(200); 
+                    System.out.print("\033[H\033[2J");
+                    System.out.flush();
                 }
                 catch (InterruptedException e){}
             }
@@ -82,6 +86,8 @@ public class MilitaryCadence {
                 try {
                     System.out.println(scanner.nextLine());
                     TimeUnit.MILLISECONDS.sleep(200); 
+                    System.out.print("\033[H\033[2J");
+                    System.out.flush();
                 }
                 catch (InterruptedException e){}
             }
