@@ -1,3 +1,6 @@
+/**
+ * @author Christian Rios, Anton Aarnink, Jack Hempstead, Kylie Gore
+ */
 import java.util.Scanner;
 
 public class MilitaryDriver {

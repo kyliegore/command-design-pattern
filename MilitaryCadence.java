@@ -1,3 +1,6 @@
+/**
+ * @author Christian Rios, Anton Aarnink, Jack Hempstead, Kylie Gore
+ */
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;

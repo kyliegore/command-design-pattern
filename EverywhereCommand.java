@@ -1,3 +1,6 @@
+/**
+ * @author Christian Rios, Anton Aarnink, Jack Hempstead, Kylie Gore
+ */
 public class EverywhereCommand implements Command{
     /**
      * The parameter cadence is the instance of Military Cadence which 

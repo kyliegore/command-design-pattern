@@ -1,3 +1,6 @@
+/**
+ * @author Christian Rios, Anton Aarnink, Jack Hempstead, Kylie Gore
+ */
 public interface Command {
     /**
      * the execute command, implemented by the separate command classes, will access the sing methods in MilitaryCadence
