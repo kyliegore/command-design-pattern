@@ -11,6 +11,10 @@ public class IDontKnowCommand implements Command {
     public IDontKnowCommand(MilitaryCadence cadence) {
         this.cadence = cadence;
     }
+    /**
+     * Below is the method implemented from the interface. The execute method calls
+     * the sing i dont know which is found in the military cadence class.
+     */
     @Override
     public void execute() {
         cadence.singIDontKnow();

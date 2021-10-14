@@ -5,14 +5,15 @@ public class InArmyCommand implements Command {
      */
     private MilitaryCadence cadence;
     /**
-     * Below is the constructor for InArmyCommand. It sets this.cadence equal to the
-     * cadence entered into the constructor
+     * Below is the constructor for InArmyCommand. It sets this.cadence equal to 
+     * the cadence entered into the constructor
      */
     public InArmyCommand(MilitaryCadence cadence) {
         this.cadence = cadence;
     }
     /**
-     * Below is the method implemented from the interface. 
+     * Below is the method implemented from the interface. The execute method calls
+     * the sing in army which is found in the military cadence class.
      */
     @Override
     public void execute() {

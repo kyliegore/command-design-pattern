@@ -11,6 +11,10 @@ public class EverywhereCommand implements Command{
     public EverywhereCommand(MilitaryCadence cadence) {
         this.cadence = cadence;
     }
+    /**
+     * Below is the method implemented from the interface. The execute method calls
+     * the sing everywhere we go which is found in the military cadence class.
+     */
     @Override
     public void execute() {
         cadence.singEverywhereWeGo();

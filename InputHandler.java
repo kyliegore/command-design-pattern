@@ -1,16 +1,18 @@
 
+import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
 public class InputHandler {
-    private Command[] commands;
+    private ArrayList<Command>() commands;
 
     public InputHandler(MilitaryCadence cadence) {
-        commands = new Command[3];
+        commands = new ArrayList<Command>();
+        
+
     }
     public boolean playCadence(int num) {
         if (num < 0 || num > 2) {
-            
-            commands[num].execute();
+            return false;
         }
         else if (num = 0) {
             
