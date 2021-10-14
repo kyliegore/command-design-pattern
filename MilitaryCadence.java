@@ -24,10 +24,8 @@ public class MilitaryCadence {
                     TimeUnit.MILLISECONDS.sleep(200); 
                 }
                 catch (InterruptedException e){}
-
             }
             scanner.close();
-        
         } 
         catch(FileNotFoundException e) {
             System.out.println("IDontKnow cadence file not found");
@@ -52,15 +50,14 @@ public class MilitaryCadence {
             while(scanner.hasNextLine()) {
                 try {
                     System.out.println(scanner.nextLine());
-                    TimeUnit.MILLISECONDS.sleep(200);
-                    
+                    TimeUnit.MILLISECONDS.sleep(200); 
                 }
                 catch (InterruptedException e){}
             }
             scanner.close();
         } 
         catch(FileNotFoundException e) {
-            System.out.println("Everywhere cadence file not found");
+            System.out.println("IDontKnow cadence file not found");
             e.printStackTrace();
         }
         catch(Exception e) {
@@ -81,15 +78,14 @@ public class MilitaryCadence {
             while(scanner.hasNextLine()) {
                 try {
                     System.out.println(scanner.nextLine());
-                    TimeUnit.MILLISECONDS.sleep(200);
-                    
+                    TimeUnit.MILLISECONDS.sleep(200); 
                 }
                 catch (InterruptedException e){}
             }
             scanner.close();
         } 
         catch(FileNotFoundException e) {
-            System.out.println("Sing in Army cadence file not found");
+            System.out.println("IDontKnow cadence file not found");
             e.printStackTrace();
         }
         catch(Exception e) {
@@ -98,5 +94,4 @@ public class MilitaryCadence {
         System.out.print("\033[H\033[2J");
         System.out.flush();
     }
-    
 }
