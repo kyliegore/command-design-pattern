@@ -15,14 +15,10 @@ public class MilitaryCadence {
                 try {
                     System.out.println(scanner.nextLine());
                     TimeUnit.MILLISECONDS.sleep(100);
-                    System.out.flush();
-                    
                 }
                 catch (InterruptedException e){}
-
             }
             scanner.close();
-        
         } 
         catch(FileNotFoundException e) {
             System.out.println("IDontKnow cadence file not found");
@@ -59,7 +55,11 @@ public class MilitaryCadence {
             File file = new File("./inarmy.txt");
             Scanner scanner = new Scanner(file);
             while(scanner.hasNextLine()) {
-                System.out.println(scanner.nextLine());
+                try {
+                    System.out.println(scanner.nextLine());
+                    TimeUnit.MILLISECONDS.sleep(200);
+                }
+                catch (InterruptedException e){}
             }
             scanner.close();
         } 
