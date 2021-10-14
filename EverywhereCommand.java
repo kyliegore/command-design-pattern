@@ -1,9 +1,11 @@
 public class EverywhereCommand implements Command{
-    public EverywhereCommand(MilitaryCadence cadence) {
+    private MilitaryCadence cadence;
 
+    public EverywhereCommand(MilitaryCadence cadence) {
+        this.cadence = cadence;
     }
     @Override
     public void execute() {
-        
+        cadence.singEverywhereWeGo();
     }
 }
