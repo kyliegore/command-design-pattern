@@ -10,6 +10,9 @@ public class InputHandler {
         if (num < 0 || num > 2) {
             return false;
         }
+        else if (num = 0) {
+            
+        }
         return true;
     }
 }
