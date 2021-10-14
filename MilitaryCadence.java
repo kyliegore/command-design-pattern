@@ -8,7 +8,7 @@ public class MilitaryCadence {
     }
     public void singIDontKnow() {
         try {
-            File file = new File("command-design-pattern/idontknow.txt");
+            File file = new File("./idontknow.txt");
             Scanner scanner = new Scanner(file);
             while(scanner.hasNextLine()) {
                 System.out.println(scanner.nextLine());
